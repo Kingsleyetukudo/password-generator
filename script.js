@@ -163,13 +163,13 @@ function upperCasePassword() {
 
 // console.log(upperCase.checked)
 
-rangeNum.innerHTML = rangeValue.value
+rangeNum.innerHTML = "Password Length: " + rangeValue.value
 rangeLength = rangeValue.value
 
 console.log(rangeValue.value, rangeLength, 'hi bro')
 rangeValue.oninput = function() {
     // output.innerHTML = this.value;
-    rangeNum.innerHTML = rangeValue.value
+    rangeNum.innerHTML = "Password Length: " + rangeValue.value
     rangeLength = rangeValue.value
     console.log(rangeLength)
   }
@@ -195,7 +195,7 @@ passwordBox1.addEventListener("click", function () {
 
 
 passwordBox2.addEventListener("click", function () {
-    let copyData = passwordBox2.textContent
+    let copyData = passwordBox1.textContent
     let shoot = navigator.clipboard.writeText(copyData)
     console.log(shoot)
     showPopUp()
