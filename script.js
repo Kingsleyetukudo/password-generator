@@ -180,7 +180,7 @@ function generatePassword() {
     randomPassword2()
     upperCasePassword()
     passwordBox1.innerHTML = showPassword
-    passwordBox2.innerHTML = showPassword2
+    // passwordBox2.innerHTML = showPassword2
     console.log(showPassword)
     console.log(showPassword2, rangeLength)
 
